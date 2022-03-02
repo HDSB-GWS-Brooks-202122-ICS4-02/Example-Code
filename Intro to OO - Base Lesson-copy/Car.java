@@ -11,14 +11,32 @@ public class Car extends Actor
     //Instance Variables
     String color;
     double speed;
-    double maxSpeed=150; // km/hr
+    double maxSpeed; // km/hr
     String licencePlate;
     String modelType;
     double fuelLevel; //Percent of fuel left
     double fuelEfficiency; // L/100 km
     
-    //insert varaibles here
+    //Constructors
+    Car() {
+        this("",0.0, 150.0);      
+    }
     
+    Car(String licencePlateIn) {
+        this(licencePlateIn, 0.0, 150.0);
+        
+    }
+    
+    Car(String licencePlateIn, double speedIn, double maxSpeedIn) {
+        setLicencePlate(licencePlateIn);
+        setMaxSpeed(maxSpeedIn);
+        accelerate(speedIn);
+        
+    }
+    
+    
+    //Methods
+    //insert varaibles here
     boolean isSpeeding() {
         double excess;
         excess = this.maxSpeed - this.speed;
@@ -38,6 +56,10 @@ public class Car extends Actor
     
     void setMaxSpeed (double maxSpeedIn) {
         this.maxSpeed = maxSpeedIn;
+    }
+    
+    void setLicencePlate (String plateIn) {
+        this.licencePlate = plateIn;
     }
     
     double getMaxSpeed() {

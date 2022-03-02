@@ -18,7 +18,7 @@ public class MyWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         
-        Car slowCar = new Car();
+        Car slowCar = new Car("L$DF@FD",0,120);
         addObject(slowCar, 50,50);
         System.out.print("The Car is moving at "+ slowCar.speed);
         System.out.println(". It's max speed is "+ slowCar.maxSpeed);
@@ -30,7 +30,8 @@ public class MyWorld extends World
 
         System.out.print("The Car is moving at "+ slowCar.speed);
         System.out.println(". It's max speed is "+ slowCar.maxSpeed);
-        
+            
+        Heater furnace = new Heater();
         
         
     }
