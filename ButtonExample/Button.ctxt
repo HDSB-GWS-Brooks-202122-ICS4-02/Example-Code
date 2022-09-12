@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Button
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Button\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Button()
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Button\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment3.params=
+comment3.target=void\ updateText()
+comment3.text=\r\n\ updateText\ -\ Creates\ an\ image\ from\ the\ button\ text\ and\ then\ updates\ the\ button\ with\ that\ image\r\n
+comment4.params=buttonTextIn
+comment4.target=void\ setValue(java.lang.String)
+comment5.params=
+comment5.target=boolean\ toggleButton()
+numComments=6
